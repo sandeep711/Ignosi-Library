@@ -1,0 +1,142 @@
+body {
+	margin:0;
+  font-family: Enas;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.clear{
+	clear:both;
+}
+a:link{
+	text-decoration: none;
+}
+@font-face {
+  font-family: Enas;
+  src: url("../Fonts/LexendExa-Regular.ttf");
+}
+#heading{
+
+	padding-top: 10px;
+	padding-bottom: 50px;
+	font-size: 20px;
+	padding-right: 300px;
+	padding-left: 300px;
+	color:#1fa67a;
+	font-weight: 900;
+	text-align: center;
+}
+.container{
+	background-color: #f2f2f2;
+	text-align: center;
+	/*margin-top: 30px;*/
+	display:grid;
+	grid-gap: 10px;
+	grid-template-columns: auto auto auto auto auto auto ;
+	grid-template-rows: 300px 400px;
+
+}
+.first{
+	grid-column: 1/7;
+	grid-row: 1;
+	
+	background-image: url("../img/about2.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+.bounceInDown {
+    animation-name: bounceInDown;
+}
+@keyframes bounceInDown{
+	0%, 60%, 75%, 90%, 100% {
+    animation-timing-function: cubic-bezier(.215,.61,.355,1);
+}
+0% {
+    opacity: 0;
+    transform: translate3d(0,-3000px,0);
+}
+60% {
+    opacity: 1;
+    transform: translate3d(0,25px,0);
+}
+75% {
+    transform: translate3d(0,-10px,0);
+}
+90% {
+    transform: translate3d(0,5px,0);
+}
+100% {
+    transform: translateZ(0);
+}
+}
+.first h1{
+	line-height: 300px;
+	margin-left: 250px;
+	color: #1fa67a;
+	font-size: 70px;
+	
+}
+
+.second{
+	width: 400px;
+	grid-column: 2/4;
+	grid-row: 2;
+	text-align: justify;	
+	margin-left: 140px;	
+	
+}
+#img2{
+	width:500px;
+	height: 330px;
+	margin-left: 200px;
+}
+.second h2{
+	color:#444;
+	font-size: 30px;
+}
+.second p{
+	color: #9d9d9d;
+}
+.fourth{
+	grid-column: 4/6;
+	grid-row: 2;
+	margin-left: -400px;
+	margin-top: 20px;	
+	
+}
+}
+.padding{
+	color:#444;
+}
+.outer-div
+{
+    /* height: 300px;*/
+     overflow: hidden; 
+}
+.inner-div
+{
+	top: 50%;
+	left: 25%;
+	box-sizing: border-box;
+	border-radius: 8px;
+     height: 100%;
+     background-size: cover;
+     background-position: center;
+     transition: all 0.5s ease;
+}
+.inner-div:hover
+{
+     transform: scale(1.1);
+}
+.top{
+	margin-top: 0 !important;
+}
+
